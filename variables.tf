@@ -98,3 +98,9 @@ variable "delete_timeout" {
   description = "VPC peering connection delete timeout. For more details, see https://www.terraform.io/docs/configuration/resources.html#operation-timeouts"
   default     = "5m"
 }
+
+variable "acceptor_route_tables" {
+  type = list(string)
+  default = []
+  description = "Allow binding specific route tables only to peering connection"
+}
