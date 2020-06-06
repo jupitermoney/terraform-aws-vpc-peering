@@ -104,3 +104,9 @@ variable "acceptor_route_tables" {
   default = []
   description = "Allow binding specific route tables only to peering connection"
 }
+
+variable "requestor_route_tables" {
+  type = list(string)
+  default = []
+  description = "Allow binding specific route tables only to peering connection"
+}
